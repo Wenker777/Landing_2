@@ -1,0 +1,21 @@
+@import "nullstyle.scss";
+@import "main-screen.scss";
+@import "second-block.scss";
+@import "third-block.scss";
+@import "four-block.scss";
+@import "five-block.scss";
+@import "six-block.scss";
+@import "seven-block.scss";
+@import "last-block.scss";
+.wrapper {
+	overflow: hidden;
+}
+
+.content {
+
+}
+
+.container {
+	max-width: 1440px;
+	margin: 0px auto;
+}

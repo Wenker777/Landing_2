@@ -1,0 +1,139 @@
+%waffle-image{
+	background-color: black;
+	background-image: url('../img/four-block/topright.png');
+	background-position: 40% 60%;
+	background-size: 75%;
+	background-repeat: no-repeat;
+	min-height: 720px;
+}
+
+%waffle-info-title{
+	font-family: 'Playfair Display';
+	font-size: 37.9px;
+	line-height: 1.2;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #141414;
+	max-width: 570px;
+	padding: 144px 60px 25px 23.5%;
+}
+%waffle-info-subtitle{
+	font-family: 'Playfair Display';
+	font-size: 23.6px;
+	line-height: 1.2;
+	font-weight: 400;
+	color: #141414;
+	max-width: 650px;
+	padding: 0 45px 76px 23.5%;
+}
+.four-block {
+
+}
+
+.four-block__row {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+
+.four-block__lefttop {
+	max-width: 1440px;
+	min-height: 720px;
+	background-color: #cdcdcd;
+}
+.four-block__title {
+	@extend %waffle-info-title;
+	
+}
+.four-block__subtitle {
+	@extend %waffle-info-subtitle;
+}
+.four-block__title2 {
+	@extend %waffle-info-title;
+}
+.four-block__subtitle2 {
+	@extend %waffle-info-subtitle;
+}
+.four-block__buttonsee {
+	margin: 0 0 152px 23.5%;
+	font-family: 'Playfair Display';
+	font-size: 33.4px;
+	line-height: 1.2;
+	font-weight: 400;
+	color: #141414;
+	text-align: center;
+	padding: 18px 0 0 0;
+	margin-bottom: 118px;
+	display: inline-block
+}
+
+
+
+.four-block__topright {
+	@extend %waffle-image;
+
+}
+
+.four-block__bottomleft {
+	@extend %waffle-image;
+}
+
+.four-block__bottomright {
+	background-color: #1b1a1a;
+	max-width: 1440px;
+	min-height: 720px;
+}
+.four-block__bottomright p{
+	color: #ffffff;
+}
+@media (max-width:1025px) {
+	.four-block__subtitle{
+		padding-right: 60px;
+	}
+	%waffle-image{
+		background-color: black;
+		background-image: url('../img/four-block/topright.png');
+		background-position: 40% 75%;
+		background-size: 85%;
+		background-repeat: no-repeat;
+	} 
+}
+@media (max-width:769px){
+	.four-block__row {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+	}
+	.four-block__title{
+		margin-top: -60px;
+	}
+	.four-block__title2{
+		margin-top: -60px;
+	}
+	.four-block__lefttop{
+		order: 1;
+	}
+	.four-block__topright{
+		order: 2;
+	}
+	.four-block__bottomleft{
+		order: 4;
+	}
+	.four-block__bottomright{
+		order: 3;
+	}
+	.four-block__buttonsee{
+		margin-bottom: 84px;
+	}
+	
+	.four-block__lefttop{
+
+	}
+	%waffle-image{
+		background-color: black;
+		background-image: url('../img/four-block/topright.png');
+		background-position: 40% 50%;
+		background-size: 85%;
+		background-repeat: no-repeat;
+	} 
+}

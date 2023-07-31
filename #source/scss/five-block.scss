@@ -1,0 +1,74 @@
+%five-block-img {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 500px;
+}
+.five-block{
+	background-color: #cdcdcd;
+	height: 720px;
+	display: flex;
+	align-items: center;
+}
+.swiper {
+	// border: 1px solid red;
+	max-width: 1420px;
+	max-height: 400px;
+	padding: 40px 0 0 0;
+}
+.swiper-wrapper{
+}
+
+.swiper-button-next{
+
+}
+.swiper-slide{
+	margin: 0 5px 30px 5px;
+}
+.one {
+	@extend %five-block-img;
+	background-image: url('../img/five-block/five_block_left.png');
+}
+.two {
+	@extend %five-block-img;
+	background-image: url('../img/five-block/five_block_left.png');
+
+}
+.three {
+	@extend %five-block-img;
+	background-image: url('../img/five-block/five_block_right.png');
+}
+.four {
+	@extend %five-block-img;
+	background-image: url('../img/five-block/five_block_center.png');
+}
+.five {
+	@extend %five-block-img;
+	background-image: url('../img/five-block/five_block_left.png');
+}
+.six {
+	@extend %five-block-img;
+	background-image: url('../img/five-block/five_block_left.png');
+}
+
+.swiper .swiper-pagination-bullet{
+	background-color: #dfa32f;
+	width: 10px;
+	height: 10px;
+	opacity: 0.7;
+}
+.swiper .swiper-pagination-bullet-active{
+	opacity: 1;
+}
+
+.swiper-button-prev::after, 
+.swiper-button-next::after{
+color: #dfa32f;
+}
+
+@media (max-width:769px) {
+	.swiper-button-prev::after, 
+	.swiper-button-next::after{
+	display: none;
+	}
+}
